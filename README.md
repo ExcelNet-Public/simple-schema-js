@@ -1,7 +1,5 @@
 # SimpleSchema (@excelnetinc/simpl-schema NPM package)
 
-[![CircleCI](https://circleci.com/gh/ExcelNet-Public/simple-schema-js/tree/master.svg?style=svg)](https://circleci.com/gh/ExcelNet-Public/simple-schema-js/tree/master)
-
 SimpleSchema validates JavaScript objects to ensure they match a schema. It can also clean the objects to automatically convert types, remove unsupported properties, and add automatic values such that the object is then more likely to pass validation.
 
 There are a lot of similar packages for validating objects. These are some of the features of this package that might be good reasons to choose this one over another:
