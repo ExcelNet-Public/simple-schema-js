@@ -4,6 +4,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+- [1.5.5](#155)
 - [1.5.4](#154)
 - [1.5.3](#153)
 - [1.5.2](#152)
@@ -37,6 +38,9 @@
 - [0.0.4](#004)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+## 1.5.5
+  - Fix references in README to new package name
+
 ## 1.5.4
 
 - Forked from aldeed / simple-schema-js to address critical need fixes
