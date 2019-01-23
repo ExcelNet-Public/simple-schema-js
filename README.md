@@ -1,6 +1,6 @@
-# SimpleSchema (simpl-schema NPM package)
+# SimpleSchema (@excelnetinc/simpl-schema NPM package)
 
-[![Backers on Open Collective](https://opencollective.com/simple-schema-js/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/simple-schema-js/sponsors/badge.svg)](#sponsors) [![CircleCI](https://circleci.com/gh/aldeed/simple-schema-js/tree/master.svg?style=svg)](https://circleci.com/gh/aldeed/simple-schema-js/tree/master)
+[![CircleCI](https://circleci.com/gh/ExcelNet-Public/simple-schema-js/tree/master.svg?style=svg)](https://circleci.com/gh/ExcelNet-Public/simple-schema-js/tree/master)
 
 SimpleSchema validates JavaScript objects to ensure they match a schema. It can also clean the objects to automatically convert types, remove unsupported properties, and add automatic values such that the object is then more likely to pass validation.
 
@@ -90,8 +90,6 @@ There are also reasons not to choose this package. Because of all it does, this 
 - [Extending the Schema Options](#extending-the-schema-options)
 - [Add On Packages](#add-on-packages)
 - [Contributors](#contributors)
-- [Backers](#backers)
-- [Sponsors](#sponsors)
 - [License](#license)
 - [Contributing](#contributing)
   - [Thanks](#thanks)
@@ -107,7 +105,7 @@ If you are migrating from the Meteor package, refer to the [CHANGELOG](https://g
 ## Installation
 
 ```bash
-npm install simpl-schema
+npm install @excelnetinc/simpl-schema
 ```
 
 There are other NPM packages named `simpleschema` and `simple-schema`. Make sure you install the right package. There is no "e" on "simpl".
@@ -1266,27 +1264,6 @@ Obviously you need to ensure that `extendOptions` is called before any SimpleSch
 This project exists thanks to all the people who contribute. [[Contribute]](CONTRIBUTING.md).
 <a href="graphs/contributors"><img src="https://opencollective.com/simple-schema-js/contributors.svg?width=890" /></a>
 
-## Backers
-
-Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/simple-schema-js#backer)]
-
-<a href="https://opencollective.com/simple-schema-js#backers" target="_blank"><img src="https://opencollective.com/simple-schema-js/backers.svg?width=890"></a>
-
-## Sponsors
-
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/simple-schema-js#sponsor)]
-
-<a href="https://opencollective.com/simple-schema-js/sponsor/0/website" target="_blank"><img src="https://opencollective.com/simple-schema-js/sponsor/0/avatar.svg"></a>
-<a href="https://opencollective.com/simple-schema-js/sponsor/1/website" target="_blank"><img src="https://opencollective.com/simple-schema-js/sponsor/1/avatar.svg"></a>
-<a href="https://opencollective.com/simple-schema-js/sponsor/2/website" target="_blank"><img src="https://opencollective.com/simple-schema-js/sponsor/2/avatar.svg"></a>
-<a href="https://opencollective.com/simple-schema-js/sponsor/3/website" target="_blank"><img src="https://opencollective.com/simple-schema-js/sponsor/3/avatar.svg"></a>
-<a href="https://opencollective.com/simple-schema-js/sponsor/4/website" target="_blank"><img src="https://opencollective.com/simple-schema-js/sponsor/4/avatar.svg"></a>
-<a href="https://opencollective.com/simple-schema-js/sponsor/5/website" target="_blank"><img src="https://opencollective.com/simple-schema-js/sponsor/5/avatar.svg"></a>
-<a href="https://opencollective.com/simple-schema-js/sponsor/6/website" target="_blank"><img src="https://opencollective.com/simple-schema-js/sponsor/6/avatar.svg"></a>
-<a href="https://opencollective.com/simple-schema-js/sponsor/7/website" target="_blank"><img src="https://opencollective.com/simple-schema-js/sponsor/7/avatar.svg"></a>
-<a href="https://opencollective.com/simple-schema-js/sponsor/8/website" target="_blank"><img src="https://opencollective.com/simple-schema-js/sponsor/8/avatar.svg"></a>
-<a href="https://opencollective.com/simple-schema-js/sponsor/9/website" target="_blank"><img src="https://opencollective.com/simple-schema-js/sponsor/9/avatar.svg"></a>
-
 ## License
 
 MIT
@@ -1302,3 +1279,4 @@ Anyone is welcome to contribute. Before submitting a pull request, make sure tha
 - @mquandalle
 - @Nemo64
 - @DavidSichau
+- @aldeed

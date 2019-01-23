@@ -10,7 +10,7 @@
     "babel-polyfill": "6.26.0",
     "babel-runtime": "6.26.0",
     "meteor-node-stubs": "0.3.2",
-    "simpl-schema": "../../package"
+    "en-simpl-schema": "../../package"
   },
   "devDependencies": {
     "expect": "21.2.1",

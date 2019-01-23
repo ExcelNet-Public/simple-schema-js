@@ -1,5 +1,5 @@
 import expect from 'expect';
-import SimpleSchema from 'simpl-schema';
+import SimpleSchema from '@excelnetinc/simpl-schema';
 import { Tracker } from 'meteor/tracker';
 
 it('Tracker reactivity works for labels', function (done) {

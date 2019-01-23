@@ -1,17 +1,17 @@
 {
-  "name": "simpl-schema",
-  "version": "1.5.3",
+  "name": "@excelnetinc/simpl-schema",
+  "version": "1.5.4",
   "description": "A schema validation package that supports direct validation of MongoDB update modifier objects.",
-  "author": "Eric Dobbertin <aldeed@gmail.com>",
+  "author": "Larry Weidig <lweidig@excel.net>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aldeed/node-simple-schema.git"
+    "url": "https://github.com/ExcelNet-Public/simple-schema-js.git"
   },
   "bugs": {
-    "url": "https://github.com/aldeed/node-simple-schema/issues"
+    "url": "https://github.com/ExcelNet-Public/simple-schema-js/issues"
   },
-  "homepage": "https://github.com/aldeed/node-simple-schema",
+  "homepage": "https://github.com/ExcelNet-Public/simple-schema-js",
   "files": [
     "dist",
     "LICENSE",
@@ -19,8 +19,8 @@
   ],
   "main": "./dist/main.js",
   "scripts": {
-    "build": "rm -rf dist/** && babel lib --out-dir dist --ignore *.tests.js,testHelpers/*",
-    "copyFiles": "cp ../README.md ./README.md && cp ../LICENSE ./LICENSE",
+    "build": "rmdir /S /Q dist && babel lib --out-dir dist --ignore *.tests.js,testHelpers/*",
+    "copyFiles": "copy /Y ..\\README.md .\\README.md && copy /Y ..\\LICENSE .\\LICENSE",
     "lint": "eslint .",
     "lintAndTest": "npm run lint && npm test",
     "prepublishOnly": "npm run lintAndTest && npm run copyFiles && npm run build",

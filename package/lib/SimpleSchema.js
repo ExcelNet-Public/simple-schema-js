@@ -2,6 +2,7 @@ import extend from 'extend';
 import MongoObject from 'mongo-object';
 import omit from 'lodash.omit';
 import every from 'lodash.every';
+import isEmpty from 'lodash.isempty';
 import pick from 'lodash.pick';
 import uniq from 'lodash.uniq';
 import MessageBox from 'message-box';
@@ -568,7 +569,8 @@ class SimpleSchema {
       key = `${key}.$`;
     }
 
-    return [...this.get(key, 'allowedValues')];
+    const allowedValues = this.get(key, 'allowedValues');
+    return isEmpty(allowedValues) ? null : [...allowedValues];
   }
 
   newContext() {
@@ -894,13 +896,13 @@ function getDefaultAutoValueFunction(defaultValue) {
     if (this.isSet) return;
     if (this.operator === null) return defaultValue;
 
-    // Handle the case when pulling an object from an array the object contains a field
-    // which has a defaultValue. We don't wan't the default value to be returned in this case
-    if (this.operator === '$pull') return;
-
     // Handle the case where we are $pushing an object into an array of objects and we
     // want any fields missing from that object to be added if they have default values
     if (this.operator === '$push') return defaultValue;
+
+    // Handle the case when pulling an object from an array the object contains a field
+    // which has a defaultValue. We don't wan't the default value to be returned in this case
+    if (this.operator === '$pull' || this.isUpdate) return;
 
     // If parent is set, we should update this position instead of $setOnInsert
     if (this.parentField().isSet) return defaultValue;

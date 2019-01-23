@@ -4,6 +4,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+- [1.5.4](#154)
 - [1.5.3](#153)
 - [1.5.2](#152)
 - [1.5.1](#151)
@@ -36,6 +37,10 @@
 - [0.0.4](#004)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+## 1.5.4
+
+- Forked from aldeed / simple-schema-js to address critical need fixes
+- Merged pull requests #304 / #306 to address two key issues
 
 ## 1.5.3
 
